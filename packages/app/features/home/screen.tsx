@@ -12,6 +12,7 @@ import {
   YStack,
   Input,
   H3,
+  Text,
 } from '@my/ui'
 import { ChevronDown, ChevronUp, X } from '@tamagui/lucide-icons'
 import { useState } from 'react'
@@ -57,12 +58,12 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
 
         {/* Results Column */}
         <YStack space="$2">
-          <H3 textAlign="center" width="80px">
+          <Text textAlign="center" width="80px">
             {totalVolume}
-          </H3>
-          <H3 textAlign="center" width="80px">
+          </Text>
+          <Text textAlign="center" width="80px">
             {oneRepMax.toFixed(1)}
-          </H3>
+          </Text>
         </YStack>
       </XStack>
     </YStack>
